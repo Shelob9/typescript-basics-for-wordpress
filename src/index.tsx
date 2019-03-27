@@ -65,6 +65,27 @@ const BlogPost = (props: { post: Post; showContent: boolean }) => {
 };
 
 /**
+ * Control for remote API URL
+ * @param props
+ */
+const ApiUrl = (props: { url: string; changeHandler: () => void }) => {
+	const { url, changeHandler } = props;
+	return (
+		<div>
+			<label htmlFor={'remote-api'}>Remote API URL</label>
+			<input
+				id={'remote-api'}
+				type={'url'}
+				value={url}
+				onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+					e.preventDefault();
+					changeHandler();
+				}}
+			/>
+		</div>
+	);
+};
+/**
  * Display a list of posts
  *
  * @param props
