@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import { render } from 'react-dom';
 import moment from 'moment';
 import './styles.css';
@@ -34,7 +34,7 @@ interface Post {
 	content: PostContent;
 	excerpt: PostExcerpt;
 	date: string;
-	id: Number;
+	id: number;
 }
 
 /**
@@ -50,6 +50,22 @@ const BlogPost = (props: { post: Post }) => {
 			<p>Published {moment(post.date).fromNow()}</p>
 			<p>{post.content.rendered}</p>
 		</article>
+	);
+};
+
+/**
+ * Display a list of posts
+ *
+ * @param props
+ */
+const ListOfPosts = (props: { posts: Array<Post> }) => {
+	const { posts } = props;
+	return (
+		<Fragment>
+			{posts.map(post => (
+				<BlogPost key={post.id} post={post} />
+			))}
+		</Fragment>
 	);
 };
 
@@ -69,7 +85,7 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<BlogPost post={post} />
+			<ListOfPosts posts={[post]} />
 		</div>
 	);
 }
