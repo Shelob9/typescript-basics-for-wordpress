@@ -1,6 +1,7 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 import { render } from 'react-dom';
 import moment from 'moment';
+import axios from 'axios';
 import './styles.css';
 
 /**
@@ -87,6 +88,32 @@ const ListOfPosts = (props: {
 		</div>
 	);
 };
+const post: Post = {
+	id: 42,
+	title: {
+		rendered: 'Post Title'
+	},
+	content: {
+		rendered: 'Post Content'
+	},
+	excerpt: {
+		rendered: 'Post Excerpt'
+	},
+	date: '2019-03-19T06:53:51'
+};
+const post2: Post = {
+	id: 4000,
+	title: {
+		rendered: 'Post Two'
+	},
+	content: {
+		rendered: 'Post 2 Content'
+	},
+	excerpt: {
+		rendered: 'Post 2 Excerpt'
+	},
+	date: '2019-01-19T06:53:51'
+};
 
 function App() {
 	/**
@@ -94,36 +121,29 @@ function App() {
 	 * Putting it here to demonstrate passing change handlers
 	 */
 	const [showContent, toggleShowContent] = useState<boolean | null>(null);
-	const post: Post = {
-		id: 42,
-		title: {
-			rendered: 'Post Title'
+
+	/**
+	 * Put posts in state
+	 */
+	const [posts, setPosts] = useState<Array<Post> | null>([post, post2]);
+
+	/**
+	 * Get posts via remote API
+	 */
+	const url = 'https://calderaforms.com/wp-json/wp/v2/posts';
+	useEffect(
+		() => {
+			axios(url).then(r => {
+				setPosts(r.data);
+			});
 		},
-		content: {
-			rendered: 'Post Content'
-		},
-		excerpt: {
-			rendered: 'Post Excerpt'
-		},
-		date: '2019-03-19T06:53:51'
-	};
-	const post2: Post = {
-		id: 4000,
-		title: {
-			rendered: 'Post Two'
-		},
-		content: {
-			rendered: 'Post 2 Content'
-		},
-		excerpt: {
-			rendered: 'Post 2 Excerpt'
-		},
-		date: '2019-01-19T06:53:51'
-	};
+		['url']
+	);
+
 	return (
 		<div className="App">
 			<ListOfPosts
-				posts={[post, post2]}
+				posts={posts}
 				showContent={showContent}
 				toggleShowContent={toggleShowContent}
 			/>
