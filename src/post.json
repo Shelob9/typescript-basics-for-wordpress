@@ -1,0 +1,130 @@
+{
+	"id": 141949,
+	"date": "2019-03-19T06:53:51",
+	"date_gmt": "2019-03-19T10:53:51",
+	"guid": {
+		"rendered": "https://calderaforms.com/?p=141949"
+	},
+	"modified": "2019-03-21T16:14:36",
+	"modified_gmt": "2019-03-21T20:14:36",
+	"slug": "translate-wordpress-site-weglot",
+	"status": "publish",
+	"type": "post",
+	"link": "https://calderaforms.com/2019/03/translate-wordpress-site-weglot/",
+	"title": {
+		"rendered": "Introducing Caldera Forms Translations by Weglot"
+	},
+	"content": {
+		"rendered": "<p>Imagine opening a website written in a language you don\u2019t understand. What would you do?</p>\n<p>You will likely just leave the page right away, because it\u2019s impossible to know what the website is about. Maybe it\u2019s the product or service you\u2019re looking for, but there are other relevant sites written in your native language, so why would you waste your time on that first website?</p>\n<p>This is the case with forms, too. Forms are basically a collection of questions. How would your visitor answer your forms if they don\u2019t understand the questions?</p>\n<p>Over a year ago, we introduced Caldera Forms Translate, a free add-on to translate the field labels, options and other parts of your Caldera Forms. We built it because it was requested by a lot of users. We gathered a lot of feedback from users of the translations add-on, and we knew we needed to better, a lot better.</p>\n<p>Our customers wanted a better interface, automatic translations, and integration with existing translation plugins.</p>\n<h2>Weglot Does Translation Better</h2>\n<p>Testing out <a href=\"https://weglot.com/?fp_ref=josh82\">Weglot</a>, I\u2019ve been super impressed by how easy it is to translate not just the forms, but the whole site. Our business serves an international audience, and we know that to grow, we need a multilingual website. We\u2019ve known this for a while, but before I tried out Weglot, it felt like too big of a task than we could handle.</p>\n<p>We decided to discontinue Caldera Forms Translate and use some Weglot magic instead. For more information on the existing translation plugin, <a href=\"https://wordpress.org/support/topic/discontinued-8/#post-11341215\">please see this discussion here</a>.</p>\n<p><strong>Surprise: your whole site is translated automatically, forms, post content, menus, everything. Magic.</strong></p>\n<div class='tm-tweet-clear'></div>\n<div class='tm-click-to-tweet'>\n<div class='tm-ctt-text'><a href='https://twitter.com/share?text=Surprise%3A+your+whole+site+is+translated+automatically%2C+forms%2C+post+content%2C+menus%2C+everything....&#038;via=CalderaWP&#038;related=CalderaWP&#038;url=https://calderaforms.com/2019/03/translate-wordpress-site-weglot/' target='_blank'>Surprise: your whole site is translated automatically, forms, post content, menus, everything&#8230;.</a></div>\n<p><a href='https://twitter.com/share?text=Surprise%3A+your+whole+site+is+translated+automatically%2C+forms%2C+post+content%2C+menus%2C+everything....&#038;via=CalderaWP&#038;related=CalderaWP&#038;url=https://calderaforms.com/2019/03/translate-wordpress-site-weglot/' target='_blank' class='tm-ctt-btn'>Click To Tweet</a></p>\n<div class='tm-ctt-tip'></div>\n</div>\n<h2>Weglot FTW</h2>\n<p>Used by more than 20,000 websites, Weglot automatically translates your whole site in minutes, <a href=\"https://calderaforms.com/2018/12/wordpress-translation-plugin/\">including your forms</a>. It supports more than 100 languages, and it\u2019s compatible with any WordPress themes and plugins.</p>\n<p>Although it\u2019s automatic, you can manually edit your translations in context using Weglot\u2019s Visual Editor. Not a polyglot? Don\u2019t worry, you can order professional translation from Weglot\u2019s dashboard.</p>\n<blockquote><p><a href=\"https://blog.weglot.com/wordpress-multilingual-forms-caldera-weglot/?fp_ref=josh82\">Weglot and Caldera Forms were created with the same goal in mind: Help website owners easily create and customize sites without the need for any coding skills. Both solutions allow you to have a website up and running no time.</a></p></blockquote>\n<h2>Caldera Forms + Weglot Work Well Together</h2>\n<p>Since January, we\u2019ve been collaborating to make sure that Weglot works seamlessly on your Caldera Forms. The team at Weglot worked with us to make a few changes to Caldera Forms to make this possible. I submitted a pull request to Weglot\u2019s WordPress plugin to make sure it detected Caldera Forms properly. It\u2019s been fun and I look forward to improving on this amazing start in collaboration between our teams.</p>\n<p>If you are already a Caldera Forms and Weglot user, there is nothing you need to do besides upgrade to the latest version of both plugins &#8212; <a href=\"https://calderaforms.com/updates/caldera-forms-1-8-3/\">Caldera Forms 1.8.3</a> or later and Weglot 2.7.0 or later. If you\u2019re not already a Weglot user already, <a href=\"https://calderaforms.com/translate/#https://weglot.com/pricing?fp_ref=josh82\">you can sign up here</a>.</p>\n<p><a href=\"https://weglot.com/pricing?fp_ref=josh82\">Enjoy your translated forms</a>!</p>\n",
+		"protected": false
+	},
+	"excerpt": {
+		"rendered": "<p>Do you want to reach a bigger audience, but don&#8217;t speak their language? Weglot translates your websites (and forms!) within minutes, automatically.</p>\n",
+		"protected": false
+	},
+	"author": 1,
+	"featured_media": 141953,
+	"comment_status": "open",
+	"ping_status": "open",
+	"sticky": false,
+	"template": "",
+	"format": "standard",
+	"meta": {
+		"_edd_button_behavior": []
+	},
+	"categories": [104],
+	"tags": [480, 620, 274],
+	"caldera_admin_help": [],
+	"caldera_doc_overview": [],
+	"cfdc_image": {
+		"ID": 141953,
+		"html": "<img width=\"660\" height=\"251\" src=\"https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms.png\" class=\"attachment-large size-large\" alt=\"image of a mountain with the text &#039;Caldera Forms Translations By WordPress&#039;\" srcset=\"https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms.png 820w, https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms-300x114.png 300w, https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms-768x292.png 768w\" sizes=\"(max-width: 660px) 100vw, 660px\" />",
+		"url": "https://calderaforms.com/wp-content/uploads/edd/2016/11/mark-viewed.png",
+		"width": "1200",
+		"height": "437",
+		"srcset": "https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms-300x114.png 300w, https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms-768x292.png 768w, https://calderaforms.com/wp-content/uploads/2019/03/translate-wordpress-site-Caldera-Forms.png 820w",
+		"sizes": "(max-width: 150px) 100vw, 150px",
+		"alt": "image of a mountain with the text 'Caldera Forms Translations By WordPress'"
+	},
+	"_links": {
+		"self": [
+			{
+				"href": "https://calderaforms.com/wp-json/wp/v2/posts/141949"
+			}
+		],
+		"collection": [
+			{
+				"href": "https://calderaforms.com/wp-json/wp/v2/posts"
+			}
+		],
+		"about": [
+			{
+				"href": "https://calderaforms.com/wp-json/wp/v2/types/post"
+			}
+		],
+		"author": [
+			{
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/users/1"
+			}
+		],
+		"replies": [
+			{
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/comments?post=141949"
+			}
+		],
+		"version-history": [
+			{
+				"count": 9,
+				"href": "https://calderaforms.com/wp-json/wp/v2/posts/141949/revisions"
+			}
+		],
+		"predecessor-version": [
+			{
+				"id": 142262,
+				"href": "https://calderaforms.com/wp-json/wp/v2/posts/141949/revisions/142262"
+			}
+		],
+		"wp:featuredmedia": [
+			{
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/media/141953"
+			}
+		],
+		"wp:attachment": [
+			{
+				"href": "https://calderaforms.com/wp-json/wp/v2/media?parent=141949"
+			}
+		],
+		"wp:term": [
+			{
+				"taxonomy": "category",
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/categories?post=141949"
+			},
+			{
+				"taxonomy": "post_tag",
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/tags?post=141949"
+			},
+			{
+				"taxonomy": "caldera_admin_help",
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/caldera_admin_help?post=141949"
+			},
+			{
+				"taxonomy": "caldera_doc_overview",
+				"embeddable": true,
+				"href": "https://calderaforms.com/wp-json/wp/v2/caldera_doc_overview?post=141949"
+			}
+		],
+		"curies": [
+			{
+				"name": "wp",
+				"href": "https://api.w.org/{rel}",
+				"templated": true
+			}
+		]
+	}
+}
