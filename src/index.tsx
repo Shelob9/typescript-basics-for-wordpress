@@ -45,15 +45,19 @@ interface Post {
  */
 const BlogPost = (props: { post: Post; showContent: boolean }) => {
 	const { post, showContent } = props;
+
+	function createMarkup(markup: string) {
+		return { __html: markup };
+	}
 	return (
 		<article id={`post-${post.id}`}>
 			<h1>{post.title.rendered}</h1>
 			<p>Published {moment(post.date).fromNow()}</p>
 			<div>
 				{showContent ? (
-					<Fragment>{post.content.rendered}</Fragment>
+					<div dangerouslySetInnerHTML={createMarkup(post.content.rendered)} />
 				) : (
-					<Fragment>{post.excerpt.rendered}</Fragment>
+					<div dangerouslySetInnerHTML={createMarkup(post.excerpt.rendered)} />
 				)}
 			</div>
 		</article>
@@ -137,7 +141,7 @@ function App() {
 				setPosts(r.data);
 			});
 		},
-		['url']
+		[url]
 	);
 
 	return (
