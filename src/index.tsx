@@ -68,7 +68,10 @@ const BlogPost = (props: { post: Post; showContent: boolean }) => {
  * Control for remote API URL
  * @param props
  */
-const ApiUrl = (props: { url: string; changeHandler: () => void }) => {
+const ApiUrl = (props: {
+	url: string;
+	changeHandler: (newValue: string) => void;
+}) => {
 	const { url, changeHandler } = props;
 	return (
 		<div>
@@ -79,7 +82,7 @@ const ApiUrl = (props: { url: string; changeHandler: () => void }) => {
 				value={url}
 				onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
 					e.preventDefault();
-					changeHandler();
+					changeHandler(e.target.value);
 				}}
 			/>
 		</div>
@@ -99,14 +102,14 @@ const ListOfPosts = (props: {
 	return (
 		<div>
 			<button
-				onClick={e => {
+				onClick={(e: React.FormEvent<HTMLInputElement>) => {
 					e.preventDefault();
 					toggleShowContent(!showContent);
 				}}>
 				Show Full Content
 			</button>
 			<Fragment>
-				{posts.map(post => (
+				{posts.map((post: Post) => (
 					<BlogPost key={post.id} post={post} showContent={showContent} />
 				))}
 			</Fragment>
@@ -156,14 +159,11 @@ function App() {
 	 * Get posts via remote API
 	 */
 	const url = 'https://calderaforms.com/wp-json/wp/v2/posts';
-	useEffect(
-		() => {
-			axios(url).then(r => {
-				setPosts(r.data);
-			});
-		},
-		[url]
-	);
+	useEffect(() => {
+		axios(url).then(r => {
+			setPosts(r.data);
+		});
+	}, [url]);
 
 	return (
 		<div className="App">
